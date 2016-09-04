@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type='text/javascript' src='./jquery-3.1.0.min.js'></script>
+    <script type='text/javascript' src='./contact_to_table.js'></script>
+    <script type='text/javascript'>
+      contacts = [
+        {
+          first: 'joe',
+          last: 'bloggs',
+          address: '123 Fake St'
+        },
+        {
+          first: 'Penny',
+          last: 'Farthing',
+          address: '321 Fake St'
+        }
+      ]
+
+
+      // Run this when jQuery is finished loading
+      $(document).ready(function() {
+        ContactTable.draw(contacts);
+      });
+    </script>
+  </head>
+  
+  <body>
+    <h1>My wonderful contact app!</h1>
+
+    <!-- The draw method looks for this element -->
+    <div id="placeholder"></div>
+  </body>
+</html>
+
+
